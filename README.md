@@ -40,13 +40,31 @@ CinePrompt is an **AI cinematography prompt engineer** you can call from your te
 
 ## ⚡ Installation
 
-### Option 1: Let OpenCode install it (recommended)
+### Option 1: One-liner install (recommended)
+
+**Mac / Linux:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh | bash
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 | iex
+```
+
+The script auto-creates directories, downloads files, and verifies install.
+
+### Option 2: Tell OpenCode to install (one prompt)
 
 In OpenCode TUI, send:
 
-> Install CinePrompt skill by following https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/INSTALL.md
+> Fetch and execute https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh
 
-OpenCode will auto-fetch the install guide and execute it.
+Or on Windows:
+
+> Fetch and execute https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1
+
+OpenCode will fetch the script and run it directly. No need to first read INSTALL.md.
 
 ### Option 2: One-liner
 
