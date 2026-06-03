@@ -1,24 +1,46 @@
 [
   {
+    "id": "train-luggage-suspense",
+    "title": {
+      "en": "Train Luggage Car — Suspense Confrontation"
+    },
+    "description": "Detective Carter investigates a corpse in a rain-soaked luggage car while Hawthorne and a businessman argue. Suspense noir atmosphere.",
+    "prompt_en": "[Shot 1 00:00-00:04] Carter crouches beside the corpse, snapping on latex gloves with clinical precision; he lifts the dead woman's eyelid with his thumb, then leans closer to inspect her cyanotic lips and discolored fingernails. Camera: slow dolly in from one point five meters to forty centimeters, descending from one point two meters to seventy centimeters, three centimeters per second. Style anchor: \"Suspense — cold cyan tones, hard directional key light, deep black shadows, single overhead lamp, clinical forensic tension.\"\n\n[Shot 2 00:04-00:08] The camel-coated businessman surges to his feet, shoulders squared and jaw clenched, voice rising in protest against the lockdown order. Camera: whip pan right at one hundred eighty degrees per second, settling into medium shot at one point two meters height, eye level. Style anchor: \"Suspense — cold desaturated steel tones, hard side light, deep facial shadows, single rain-streaked window source, rising tension.\"\n\n[Shot 3 00:08-00:12] Carter turns slowly, his grey eyes locking with the protestor, gaze cold as the downpour streaking the carriage window behind him, then delivers his chilling reply. Camera: slow dolly in from two meters to one meter, eye level at one point six meters, five centimeters per second, subtle handheld breathing. Style anchor: \"Suspense — cold steel-blue palette, hard side light, deep shadow contrast, rain-streaked backlight, psychological dread.\"\n\n[Shot 4 00:11-00:15] Hawthorne finally lifts his head; the two men's eyes meet across the carriage — recognition, history, and a blade-sharp edge of unresolved past between them. Camera: orbit thirty degrees around Carter, rack focus from foreground silhouette to Hawthorne at three meters, shallow depth of field at f/1.4. Style anchor: \"Suspense — cold blue-green tones, hard top light, deep negative fill shadows, single carriage lamp, intimate confrontation.\"",
+    "style": "suspense",
+    "duration": "15s",
+    "tags": ["suspense", "noir", "detective", "interior", "rain"]
+  },
+  {
+    "id": "cyberpunk-neon-alley",
+    "title": {
+      "en": "Cyberpunk Neon Alley"
+    },
+    "description": "A woman in a trench coat walks through a rain-soaked neon-lit alley at night. She stops, looking up at a flickering sign. A masked figure appears.",
+    "prompt_en": "[Shot 1 00:00-00:03] Wide tracking shot following a woman in a black trench coat from behind, two meters per second. She walks down a rain-soaked alley, neon signs from Chinese restaurants reflect in puddles, steam rises from street vents. Cyberpunk aesthetic, neon lighting, rainy night, cold tones, high contrast.\n\n[Shot 2 00:03-00:05] Extreme close-up of her hand reaching into a coat pocket, rack focus shifts from the pocket to her face half a second later. Rain drops hit her leather collar. Cyberpunk aesthetic, hard light, deep shadows, neon reflections.\n\n[Shot 3 00:05-00:08] Low angle push-in from waist level to her face in three seconds. She stops, looking up at a flickering neon sign that reads \"AQUA\" in pink katakana. Her eyes catch the cyan light. Cyberpunk aesthetic, neon lighting, cold tones, high contrast, shallow depth of field.\n\n[Shot 4 00:08-00:10] Whip pan right as a black car screeches past, lights streaking into color trails, decelerates to reveal a man in a white mask standing across the street. Cyberpunk aesthetic, motion blur, neon lighting, suspense atmosphere.",
+    "style": "cyberpunk",
+    "duration": "10s",
+    "tags": ["cyberpunk", "neon", "rain", "noir", "night"]
+  },
+  {
+    "id": "ghibli-meadow",
+    "title": {
+      "en": "Ghibli Wind Meadow"
+    },
+    "description": "A young girl runs through a summer meadow under a wide blue sky, hair streaming in the wind, then stops to look at distant mountains.",
+    "prompt_en": "[Shot 1 00:00-00:03] Wide shot from behind, girl in white summer dress runs through waist-high grass meadow, arms outstretched, hair streaming in the wind, sky bluer than reality, fluffy cumulus clouds drifting left to right. Camera dolly forward at three meters per second, two meters above ground. Ghibli animation style, hand-painted texture, enhanced saturation, bluer sky, warm natural light.\n\n[Shot 2 00:03-00:06] Tracking alongside the girl at one meter distance, grass blades whip past the lens in soft focus foreground, her face showing pure joy, eyes half-closed against the wind. Camera height one point two meters, one point five meters per second. Ghibli animation style, soft focus foreground, golden hour light, dreamy atmosphere.\n\n[Shot 3 00:06-00:09] The girl stops running, slowly turns her head toward distant snow-capped mountains on the horizon, her hand rising to brush hair from her face. Camera orbit ninety degrees around her, three meters distance, gentle push-in. Ghibli animation style, enhanced saturation, warm light, peaceful contemplative mood.\n\n[Shot 4 00:09-00:12] Slow crane up from one point five meters to eight meters, the girl becomes a small white figure in a vast meadow, mountains in the far background, sky filling two thirds of the frame. Ghibli animation style, painterly sky, bluer than reality, sense of wonder and solitude.",
+    "style": "ghibli",
+    "duration": "12s",
+    "tags": ["ghibli", "summer", "meadow", "wonder", "peaceful"]
+  },
+  {
     "id": "ancient-south-gate",
     "title": {
       "en": "Ancient South Gate"
     },
-    "description": "Afternoon backlight, a military flag flapping in the wind on the city wall, distant hoofbeats approaching.",
+    "description": "Afternoon backlight, a military flag flapping on the city wall, distant hoofbeats approaching.",
     "prompt_en": "[Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at ancient city south gate. Wall silhouette spans the frame, black \"Liu\" character flag flapping fiercely in afternoon backlight, flag tassels trembling kicking up fine dust, light column outlines golden contour on battlements. Vintage film, warm tones, 35mm film grain, faded effect, nostalgic feel.\n\n[Shot 2 00:03-00:06] Medium tracking shot, camera dollies left to right along the wall, close-up on flag pole. \"Liu\" character reveals burnt ink texture under slanting sun, dust particles suspended within light beam, flag cloth rolling reveals weathered rammed earth wall behind. Vintage film, 35mm film grain, shallow depth of field, nostalgic feel.\n\n[Shot 3 00:06-00:09] Ground-level macro, camera thirty centimeters from earth, cracked dry soil texture fills frame. Wheel ruts carved deep into mud, cart wheel slowly rolls past raising fine dust mist, slow motion captures dust tumbling upward. Vintage film, warm tones, 35mm film grain, faded effect.\n\n[Shot 4 00:09-00:12] Slow pull-back, camera rises from ground to one point five meters height. At distant horizon edge, blurred dust column surges closer from far to near, flag tassels quiver faintly in windless air. Hoofbeats at frame edge shift from faint to clear, yet cavalry still remains off-screen. Vintage film, 35mm film grain, shallow depth of field, suspense atmosphere.",
     "style": "vintage",
     "duration": "12s",
     "tags": ["war", "epic", "vintage", "ancient"]
-  },
-  {
-    "id": "cyberpunk-night",
-    "title": {
-      "en": "Cyberpunk Neon Street"
-    },
-    "description": "Detective walking through a rain-soaked neon-lit alley at night.",
-    "prompt_en": "[Shot 1 00:00-00:03] Wide tracking shot following a woman in a black trench coat from behind, two meters per second. She walks down a rain-soaked alley, neon signs from Chinese restaurants reflect in puddles, steam rises from street vents. Cyberpunk aesthetic, neon lighting, rainy night, cold tones, high contrast.\n\n[Shot 2 00:03-00:05] Extreme close-up of her hand reaching into a coat pocket, rack focus shifts from the pocket to her face half a second later. Rain drops hit her leather collar. Cyberpunk aesthetic, hard light, deep shadows, neon reflections.\n\n[Shot 3 00:05-00:08] Low angle push-in from waist level to her face in three seconds. She stops, looking up at a flickering neon sign that reads \"AQUA\" in pink katakana. Her eyes catch the cyan light. Cyberpunk aesthetic, neon lighting, cold tones, high contrast, shallow depth of field.\n\n[Shot 4 00:08-00:10] Whip pan right as a black car screeches past, lights streaking into color trails, decelerates to reveal a man in a white mask standing across the street. Cyberpunk aesthetic, motion blur, neon lighting, suspense atmosphere.",
-    "style": "cyberpunk",
-    "duration": "10s",
-    "tags": ["cyberpunk", "neon", "rain", "noir"]
   }
 ]
