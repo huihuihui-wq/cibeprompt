@@ -112,6 +112,36 @@
       display: block;
       margin: 0 auto;
     }
+
+    /* Prominent copy button (GitHub-style) */
+    .copy-btn-prominent {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #c9d1d9;
+      background: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .copy-btn-prominent:hover {
+      background: #30363d;
+      border-color: #8b949e;
+      color: #f0f6fc;
+    }
+    .copy-btn-prominent:active { transform: scale(0.97); }
+    .copy-btn-prominent.copied {
+      background: #238636;
+      border-color: #2ea043;
+      color: #ffffff;
+    }
+    .copy-btn-prominent svg { width: 14px; height: 14px; }
+  </style>
   </style>
 </head>
 
@@ -213,8 +243,8 @@ irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 |
             <span class="gh-code-lang">markdown</span>
             <span class="text-xs text-cinema-muted/60 hidden sm:inline">&middot; cinematography-prompt.md</span>
           </div>
-          <button class="copy-btn px-3 py-1 text-xs rounded-md border border-cinema-border hover:border-cinema-gold text-cinema-muted hover:text-cinema-gold transition flex items-center gap-1.5" data-copy="example1-prompt">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <button class="copy-btn-prominent" data-copy="example1-prompt">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
             <span class="copy-label">Copy</span>
           </button>
         </div>
@@ -274,8 +304,8 @@ Style anchor: Suspense — cold blue-green tones, hard top light, deep negative 
             <span class="gh-code-lang">markdown</span>
             <span class="text-xs text-cinema-muted/60 hidden sm:inline">&middot; suspense-interrogation.md</span>
           </div>
-          <button class="copy-btn px-3 py-1 text-xs rounded-md border border-cinema-border hover:border-cinema-gold text-cinema-muted hover:text-cinema-gold transition flex items-center gap-1.5" data-copy="example2-prompt">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <button class="copy-btn-prominent" data-copy="example2-prompt">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
             <span class="copy-label">Copy</span>
           </button>
         </div>
@@ -771,7 +801,7 @@ irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 |
 
 <!-- SCRIPTS -->
 <script>
-  document.querySelectorAll('.copy-btn').forEach(btn => {
+  document.querySelectorAll('.copy-btn, .copy-btn-prominent').forEach(btn => {
     btn.addEventListener('click', async () => {
       const target = btn.dataset.copy;
       let text = '';
@@ -785,7 +815,7 @@ irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 |
         await navigator.clipboard.writeText(text);
         const label = btn.querySelector('.copy-label');
         const orig = label.textContent;
-        label.textContent = '✓ Copied';
+        label.textContent = '✓ Copied!';
         btn.classList.add('copied');
         setTimeout(() => { label.textContent = orig; btn.classList.remove('copied'); }, 2000);
       } catch (e) { console.error('Copy failed', e); }
