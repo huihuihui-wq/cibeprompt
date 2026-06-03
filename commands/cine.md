@@ -1,46 +1,54 @@
 ---
-description: Generate AI video cinematography prompt (bilingual Chinese + English, uses CinePrompt skill)
+description: Generate AI video cinematography prompt (English, uses CinePrompt skill)
 agent: build
 ---
-The cineprompt skill provides the camera movement dictionary and style anchor vocabulary. Process the user's scene and output a bilingual cinematography prompt in the format below.
+The cineprompt skill provides the camera movement dictionary and style anchor vocabulary. Process the user's scene and output a single English cinematography prompt.
 
 # User Scene
 $ARGUMENTS
 
-# Output Format (CRITICAL - read carefully)
+# Output Format (CRITICAL)
 
-You are generating TWO message bubbles (like chat messages). Each bubble contains ONE complete prompt that the user will copy and paste into an AI video platform. NO contamination, NO extra text, NO thinking aloud.
+Output ONLY one English prompt. No bilingual blocks. No Chinese. No preamble. No "Here is the prompt:". No "任务已完成". No thinking aloud.
 
-Output EXACTLY these elements in this order, and nothing else:
+Format:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Cinematography Prompt (Click 📋 to copy)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Shot 1 00:00-00:03] Real content about the user's scene. Quantified camera movements (height in meters/cm, distance in meters, speed in m/s or degrees). 15-25 word style anchor.
 
-1. Identity line: 我是AI视频提示词助手。
+[Shot 2 00:03-00:06] Real content. Quantified movements. Style anchor.
 
-2. First bubble - Chinese prompt (user clicks Copy button on this):
-   - Divider line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   - Header: 📋 中文提示词（点击右上角 📋 复制）
-   - Divider line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   - 3-4 paragraphs of Chinese shot descriptions
-   - Each paragraph format: 【镜头一 00:00-00:03】 中文内容描述。量化参数（高度/距离/速度/角度）。15-25字风格锚点。
-   - Replace ALL placeholders with real content about the user's scene
+[Shot 3 00:05-00:08] Real content. Quantified movements. Style anchor.
 
-3. Second bubble - English prompt (user clicks Copy button on this):
-   - Divider line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   - Header: 📋 English Prompt (Click 📋 to copy)
-   - Divider line: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   - 3-4 paragraphs of English shot descriptions
-   - Each paragraph format: [Shot 1 00:00-00:03] English content. Quantified camera movements. 15-25 word style anchor.
-   - Convert all numbers to English words
+(Add 2-4 shots total depending on scene complexity)
 
 # Hard Rules
 
-- Output ONLY the 3 elements above. No "Here is the prompt:", no "I generated...", no "任务已完成", no thinking process.
-- NO square bracket placeholders like [此处填入] or [镜头一 00:00-00:03] [内容]. These are bad.
-- Each bubble must contain REAL content based on the user's scene. Real Chinese in bubble 2, real English in bubble 3.
+- Output ONLY the cinematography prompt. Nothing before or after.
+- NO placeholders like [Shot 1] [content here] or [此处填入].
+- Convert all numbers to English words: "120km/h" -> "one hundred twenty kilometers per hour". "30cm" -> "thirty centimeters". "2m" -> "two meters".
+- NO Chinese characters anywhere in the output. The user's scene input may be in any language; the output prompt is always English.
+- Quantify every camera movement (height, distance, angle, speed).
+- Style anchor 15-25 words per shot to prevent visual drift.
 - If the scene is vague, ask visual clarification questions FIRST (mood/pacing/lighting/emotional goal) and do not generate.
-- Both bubbles are REQUIRED. Never output only one.
 
-# Camera Movement Reference
-推近 Dolly In · 拉远 Dolly Out · 横移 Tracking · 跟拍 Follow · 环绕 Orbit · 升降 Crane · 手持 Handheld · 航拍 Aerial · 快速横摇 Whip Pan · 焦点转移 Rack Focus
+# Camera Movement Vocabulary
 
-# Style Anchors (pick one per shot, 15-25 words)
+Dolly In (push in) · Dolly Out (pull back) · Tracking (truck) · Follow Shot · Orbit (arc) · Crane (boom) · Handheld · Aerial (drone) · Whip Pan · Rack Focus
+
+# Style Anchor Vocabulary (pick one per shot, 15-25 words)
+
 cinematic · cyberpunk · ghibli · vintage · minimal-luxury · healing · suspense · dreamy · documentary · commercial
+
+Each style expands to specific technical terms when applied. For example:
+- cinematic -> "35mm film, shallow depth of field, natural light, warm tones"
+- cyberpunk -> "neon lighting, rainy night, cold tones, high contrast"
+- vintage -> "warm tones, film grain, faded effect, nostalgic"
+- ghibli -> "hand-painted texture, enhanced saturation, bluer sky"
+- minimal-luxury -> "rim light, metallic texture, minimal composition"
+- healing -> "soft light, natural elements, slow pace, comforting"
+- suspense -> "hard light, deep shadows, local lighting, tension"
+- dreamy -> "overexposure, hazy, shallow depth of field, pastel"
+- documentary -> "natural light, handheld shake, candid capture"
+- commercial -> "4K ultra-clear, high saturation, product close-up"
