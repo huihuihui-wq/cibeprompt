@@ -2,14 +2,23 @@
   {
     "id": "ancient-south-gate",
     "title": {
-      "zh": "古城南门",
       "en": "Ancient South Gate"
     },
-    "description": "午后逆光下，城墙上的军旗在风中飘扬，远方马蹄声渐近。",
-    "prompt_zh": "【镜头一 00:00-00:03】远景建立，低角度仰拍古城南门。城墙剪影横亘画面，\"刘\"字黑旗在午后逆光中猎猎翻卷，旗穗抖动扬起细尘，光柱勾勒城垛金色轮廓。复古胶片，暖色调，35mm胶片颗粒，褪色效果，年代感。\n\n【镜头二 00:03-00:06】中景横移，镜头沿城墙自左向右平移，旗杆特写。\"刘\"字在斜阳中显现焦墨质感，灰尘颗粒悬浮于光束之间，旗布翻卷时露出背后斑驳夯土墙面。复古胶片，35mm胶片颗粒，浅景深，年代感。\n\n【镜头三 00:06-00:09】贴地微距，镜头距地面三十厘米，干裂土路纹理铺满画面。车辙深深刻入泥土，车轮缓缓碾过扬起细密尘雾，慢动作捕捉尘埃翻滚升腾。复古胶片，暖色调，35mm胶片颗粒，褪色效果。\n\n【镜头四 00:09-00:12】缓慢拉远，镜头从路面升起至一米五高度。远处地平线尽头，模糊尘柱正自远而近涌来，旗穗在无风处轻轻一颤。画面边缘马蹄声由隐约转为清晰，但骑队仍未入画。复古胶片，35mm胶片颗粒，浅景深，悬念氛围。",
+    "description": "Afternoon backlight, a military flag flapping in the wind on the city wall, distant hoofbeats approaching.",
     "prompt_en": "[Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at ancient city south gate. Wall silhouette spans the frame, black \"Liu\" character flag flapping fiercely in afternoon backlight, flag tassels trembling kicking up fine dust, light column outlines golden contour on battlements. Vintage film, warm tones, 35mm film grain, faded effect, nostalgic feel.\n\n[Shot 2 00:03-00:06] Medium tracking shot, camera dollies left to right along the wall, close-up on flag pole. \"Liu\" character reveals burnt ink texture under slanting sun, dust particles suspended within light beam, flag cloth rolling reveals weathered rammed earth wall behind. Vintage film, 35mm film grain, shallow depth of field, nostalgic feel.\n\n[Shot 3 00:06-00:09] Ground-level macro, camera thirty centimeters from earth, cracked dry soil texture fills frame. Wheel ruts carved deep into mud, cart wheel slowly rolls past raising fine dust mist, slow motion captures dust tumbling upward. Vintage film, warm tones, 35mm film grain, faded effect.\n\n[Shot 4 00:09-00:12] Slow pull-back, camera rises from ground to one point five meters height. At distant horizon edge, blurred dust column surges closer from far to near, flag tassels quiver faintly in windless air. Hoofbeats at frame edge shift from faint to clear, yet cavalry still remains off-screen. Vintage film, 35mm film grain, shallow depth of field, suspense atmosphere.",
     "style": "vintage",
     "duration": "12s",
-    "tags": ["战争", "史诗", "复古", "古城", "三国王旗"]
+    "tags": ["war", "epic", "vintage", "ancient"]
+  },
+  {
+    "id": "cyberpunk-night",
+    "title": {
+      "en": "Cyberpunk Neon Street"
+    },
+    "description": "Detective walking through a rain-soaked neon-lit alley at night.",
+    "prompt_en": "[Shot 1 00:00-00:03] Wide tracking shot following a woman in a black trench coat from behind, two meters per second. She walks down a rain-soaked alley, neon signs from Chinese restaurants reflect in puddles, steam rises from street vents. Cyberpunk aesthetic, neon lighting, rainy night, cold tones, high contrast.\n\n[Shot 2 00:03-00:05] Extreme close-up of her hand reaching into a coat pocket, rack focus shifts from the pocket to her face half a second later. Rain drops hit her leather collar. Cyberpunk aesthetic, hard light, deep shadows, neon reflections.\n\n[Shot 3 00:05-00:08] Low angle push-in from waist level to her face in three seconds. She stops, looking up at a flickering neon sign that reads \"AQUA\" in pink katakana. Her eyes catch the cyan light. Cyberpunk aesthetic, neon lighting, cold tones, high contrast, shallow depth of field.\n\n[Shot 4 00:08-00:10] Whip pan right as a black car screeches past, lights streaking into color trails, decelerates to reveal a man in a white mask standing across the street. Cyberpunk aesthetic, motion blur, neon lighting, suspense atmosphere.",
+    "style": "cyberpunk",
+    "duration": "10s",
+    "tags": ["cyberpunk", "neon", "rain", "noir"]
   }
 ]

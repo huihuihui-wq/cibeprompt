@@ -1,42 +1,40 @@
-<div align="center">
-
 # 🎬 CinePrompt
 
 **Every creative vision, precisely visualized.**
 
-专业的 AI 视频摄影提示词工程专家 · 输出中英双版电影级运镜提示词
+Professional AI cinematography prompt engineer. Outputs a single English prompt with quantified camera movements and style anchors, ready to paste into Veo3 / Sora / Runway / Kling / Jimeng / Pika / Luma / Hailuo.
 
-[⚡ 一键安装](#-一键安装) · [🎥 案例画廊](#-案例画廊) · [📖 完整文档](INSTALL.md) · [⭐ Star this](https://github.com/huihuihui-wq/cibeprompt)
-
-</div>
+[⚡ Install](#-installation) · [🎥 Examples](#-examples) · [📖 SKILL.md](SKILL.md) · [⭐ Star this](https://github.com/huihuihui-wq/cibeprompt)
 
 ---
 
-## 这是什么？
+## What is this?
 
-CinePrompt 是一款 **AI 视频摄影提示词工程专家**。你描述场景、情绪、氛围，它输出精确的**电影级运镜提示词**，中英双版，可直接粘贴到任何 AI 视频平台。
+CinePrompt is an **AI cinematography prompt engineer** you can call from your terminal. You describe a scene, mood, or reference, and it outputs a precise cinematography prompt with quantified camera movements, timing, and style anchors.
 
-### ✨ 核心特性
+### ✨ Features
 
-- 🎥 **10 种运镜** — 推近、拉远、横移、跟拍、环绕、升降、手持、航拍、快速横摇、焦点转移
-- 🎨 **10 种风格锚点** — 电影 · 赛博朋克 · 吉卜力 · 复古 · 极简奢华 · 治愈 · 悬疑 · 梦幻 · 纪录片 · 商业
-- 🌍 **中英双版** — 独立可复制，零翻译损耗
-- 🎬 **多镜头分镜** — 自动拆分场景，量化每个镜头的参数
-- ⚡ **平台通用** — 兼容 Veo3 / Sora / Runway / Kling / 可灵 / 即梦 / Pika / Luma / Hailuo
+- 🎥 **10 Camera Movements** — Dolly In/Out, Tracking, Follow, Orbit, Crane, Handheld, Aerial, Whip Pan, Rack Focus
+- 🎨 **10 Style Anchors** — Cinematic · Cyberpunk · Ghibli · Vintage · Minimal Luxury · Healing · Suspense · Dreamy · Documentary · Commercial
+- 🎬 **Multi-shot storyboard** — Auto-splits scene into 3-4 shots with timestamps
+- ⚡ **Quantified parameters** — Every movement has specific height, distance, angle, speed
+- 🌍 **Universal compatibility** — Works with all major AI video platforms
+
+> **Note**: v2.0 outputs English-only. v1.0 had bilingual EN/CN support but was removed for cleaner output.
 
 ---
 
-## ⚡ 一键安装
+## ⚡ Installation
 
-### 方式 1：让 OpenCode 帮你装（推荐）
+### Option 1: Let OpenCode install it (recommended)
 
-在 OpenCode TUI 里直接说：
+In OpenCode TUI, send:
 
 > Install CinePrompt skill by following https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/INSTALL.md
 
-OpenCode 会自动拉取安装说明并执行。
+OpenCode will auto-fetch the install guide and execute it.
 
-### 方式 2：一行命令
+### Option 2: One-liner
 
 ```bash
 # Mac / Linux
@@ -46,122 +44,112 @@ curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/instal
 irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 | iex
 ```
 
-### 方式 3：手动安装
+### Option 3: Manual
 
 ```bash
-# 1. Skill 主体
 mkdir -p ~/.config/opencode/skills/cibeprompt
 curl -o ~/.config/opencode/skills/cibeprompt/SKILL.md \
   https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md
 
-# 2. /cine 命令
 mkdir -p ~/.config/opencode/commands
 curl -o ~/.config/opencode/commands/cine.md \
   https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/commands/cine.md
 
-# 3. 重启 OpenCode TUI
+# Restart OpenCode TUI
 ```
 
 ---
 
-## 🚀 使用
+## 🚀 Usage
 
 ```bash
-# 方式 A：在 OpenCode TUI 输入
-/cine 古城南门外，城墙上"刘"字军旗飘扬，午后逆光，车轮扬尘
+# In OpenCode TUI
+/cine A cyberpunk rainy night, detective walking through neon street
 
-# 方式 B：直接描述场景（自动触发）
-帮我做一段视频：古城南门外，午后逆光，车轮扬尘，马蹄声渐近
+# Or just describe (auto-triggers)
+/cine A samurai standing in cherry blossom wind
 ```
 
-**输出示例**：
+**Output**:
 
-> 我是AI视频提示词助手。
->
-> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-> 📋 中文提示词（点击右上角 📋 复制）
-> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
->
-> 【镜头一 00:00-00:03】远景建立，低角度仰拍古城南门……
->
-> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-> 📋 English Prompt (Click 📋 to copy)
-> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
->
-> [Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at ancient city south gate……
+```
+[Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at...
+[Shot 2 00:03-00:06] Tracking parallel to subject, two meters per second...
+[Shot 3 00:06-00:09] Push in close-up, thirty centimeters per second...
+```
+
+Each shot ends with a 15-25 word style anchor (e.g. "Vintage film, warm tones, 35mm film grain").
 
 ---
 
-## 🎥 案例画廊
+## 🎥 Example Gallery
 
-查看完整的案例集合：[`data/examples.json`](data/examples.json)
+View full collection: [`data/examples.json`](data/examples.json)
 
-提交你的案例：编辑 `data/examples.json`，提交 PR 即可。
-
----
-
-## 🧠 工作原理
-
-| 用户说 | 我理解为 | 我输出 |
-|--------|---------|--------|
-| "cinematic" | 质感、深度、叙事 | 35mm 胶片、浅景深、暖色调 |
-| "dynamic" | 速度、流动、冲击 | 贴地飞行、手持呼吸、急速横摇 |
-| "highlight subject" | 焦点、层次、引导 | 推近特写、虚化背景、轮廓光 |
-| "storytelling" | 变化、弧线、情绪 | 多镜头分镜、反打镜头、焦点转移 |
-
-详细规范见 [`SKILL.md`](SKILL.md)。
+Submit your examples by editing `data/examples.json` and opening a PR.
 
 ---
 
-## 📁 仓库结构
+## 🧠 How it works
+
+| User says | Understood as | Output |
+|-----------|---------------|--------|
+| "cinematic" | Texture, depth, narrative | 35mm film, shallow DoF, warm tones |
+| "dynamic" | Speed, flow, impact | Ground-level flying, handheld breathing, whip pan |
+| "highlight subject" | Focus, layers, guidance | Push-in close-up, bokeh, rim light |
+| "storytelling" | Change, arc, emotion | Multi-shot blocks, rack focus |
+
+Full spec: [`SKILL.md`](SKILL.md)
+
+---
+
+## 📁 Repository structure
 
 ```
 cibeprompt/
-├── index.html              # 项目展示页（GitHub Pages）
+├── index.html              # Project page (GitHub Pages)
 ├── data/
-│   └── examples.json       # 案例数据（动态加载）
+│   └── examples.json       # Example data (dynamically loaded)
 ├── skills/
 │   └── cibeprompt/
-│       └── SKILL.md        # Skill 主体（被 OpenCode 加载）
+│       └── SKILL.md        # Skill body (loaded by OpenCode)
 ├── commands/
-│   └── cine.md             # /cine 命令定义
-├── install.sh              # Mac/Linux 一键安装
-├── install.ps1             # Windows 一键安装
-├── INSTALL.md              # 给 OpenCode 看的安装说明
-├── README.md               # 你正在看的
-├── SKILL.md                # Skill 完整规范
+│   └── cine.md             # /cine command definition
+├── install.sh              # Mac/Linux one-liner installer
+├── install.ps1             # Windows one-liner installer
+├── INSTALL.md              # Auto-fetched by OpenCode
+├── README.md               # This file
+├── SKILL.md                # Full skill specification
 ├── LICENSE                 # MIT
-└── DEPLOY.md               # GitHub Pages 部署指南
+└── .github/workflows/
+    └── pages.yml           # GitHub Actions deployment
 ```
 
 ---
 
-## 🛠️ 平台兼容性
+## 🛠️ Platform compatibility
 
-| 平台 | 状态 | 备注 |
-|------|------|------|
-| [OpenCode](https://opencode.ai) | ✅ | 原生 /cine 命令 |
-| [Claude Code](https://claude.com/claude-code) | ✅ | 复制 SKILL.md 到 `~/.claude/skills/cibeprompt/` |
-| [Codex CLI](https://openai.com/index/openai-codex-cli) | ✅ | 复制到 `~/.codex/skills/cibeprompt/` |
-| Cursor | ⚠️ | 改写为 `.cursorrules` 格式 |
-| Windsurf | ⚠️ | 改写为 `.windsurfrules` 格式 |
-
----
-
-## 🤝 贡献
-
-欢迎提交：
-
-- 新的提示词案例（PR 到 `data/examples.json`）
-- 新的风格锚点
-- 多语言翻译
-- Bug 报告
+| Platform | Status | Notes |
+|----------|--------|-------|
+| [OpenCode](https://opencode.ai) | ✅ | Native /cine command |
+| [Claude Code](https://claude.com/claude-code) | ✅ | Copy SKILL.md to `~/.claude/skills/cibeprompt/` |
+| [Codex CLI](https://openai.com/index/openai-codex-cli) | ✅ | Copy to `~/.codex/skills/cibeprompt/` |
+| Cursor | ⚠️ | Rewrite as `.cursorrules` format |
+| Windsurf | ⚠️ | Rewrite as `.windsurfrules` format |
 
 ---
 
-## 📜 许可证
+## 🤝 Contributing
 
-MIT © 2026 [huihuihui-wq](https://github.com/huihuihui-wq)
+- New example prompts (PR to `data/examples.json`)
+- New style anchors
+- Bug reports
+
+---
+
+## 📜 License
+
+MIT © 2026
 
 ---
 
