@@ -1,138 +1,172 @@
 <div align="center">
 
-# 馃幀 CinePrompt
+# 🎬 CinePrompt
 
 **Every creative vision, precisely visualized.**
 
-涓撲笟鐨?AI 瑙嗛鎽勫奖鎻愮ず璇嶅伐绋嬩笓瀹?路 杈撳嚭涓嫳鍙岀増鐢靛奖绾ц繍闀滄彁绀鸿瘝
+专业的 AI 视频摄影提示词工程专家 · 输出中英双版电影级运镜提示词
 
-[鈿?涓€閿畨瑁匽(#-涓€閿畨瑁? 路 [馃帴 妗堜緥鐢诲粖](#-妗堜緥鐢诲粖) 路 [馃摉 瀹屾暣鏂囨。](INSTALL.md) 路 [猸?Star this](https://github.com/huihuihui-wq/cineprompt-skill)
+[⚡ 一键安装](#-一键安装) · [🎥 案例画廊](#-案例画廊) · [📖 完整文档](INSTALL.md) · [⭐ Star this](https://github.com/huihuihui-wq/cibeprompt)
 
 </div>
 
 ---
 
-## 杩欐槸浠€涔堬紵
+## 这是什么？
 
-CinePrompt 鏄竴娆?**AI 瑙嗛鎽勫奖鎻愮ず璇嶅伐绋嬩笓瀹?*銆備綘鎻忚堪鍦烘櫙銆佹儏缁€佹皼鍥达紝瀹冭緭鍑虹簿纭殑**鐢靛奖绾ц繍闀滄彁绀鸿瘝**锛屼腑鑻卞弻鐗堬紝鍙洿鎺ョ矘璐村埌浠讳綍 AI 瑙嗛骞冲彴銆?
-### 鉁?鏍稿績鐗规€?
-- 馃帴 **10 绉嶈繍闀?* 鈥?鎺ㄨ繎銆佹媺杩溿€佹í绉汇€佽窡鎷嶃€佺幆缁曘€佸崌闄嶃€佹墜鎸併€佽埅鎷嶃€佸揩閫熸í鎽囥€佺劍鐐硅浆绉?- 馃帹 **10 绉嶉鏍奸敋鐐?* 鈥?鐢靛奖 路 璧涘崥鏈嬪厠 路 鍚夊崪鍔?路 澶嶅彜 路 鏋佺畝濂㈠崕 路 娌绘剤 路 鎮枒 路 姊﹀够 路 绾綍鐗?路 鍟嗕笟
-- 馃實 **涓嫳鍙岀増** 鈥?鐙珛鍙鍒讹紝闆剁炕璇戞崯鑰?- 馃幀 **澶氶暅澶村垎闀?* 鈥?鑷姩鎷嗗垎鍦烘櫙锛岄噺鍖栨瘡涓暅澶寸殑鍙傛暟
-- 鈿?**骞冲彴閫氱敤** 鈥?鍏煎 Veo3 / Sora / Runway / Kling / 鍙伒 / 鍗虫ⅵ / Pika / Luma / Hailuo
+CinePrompt 是一款 **AI 视频摄影提示词工程专家**。你描述场景、情绪、氛围，它输出精确的**电影级运镜提示词**，中英双版，可直接粘贴到任何 AI 视频平台。
+
+### ✨ 核心特性
+
+- 🎥 **10 种运镜** — 推近、拉远、横移、跟拍、环绕、升降、手持、航拍、快速横摇、焦点转移
+- 🎨 **10 种风格锚点** — 电影 · 赛博朋克 · 吉卜力 · 复古 · 极简奢华 · 治愈 · 悬疑 · 梦幻 · 纪录片 · 商业
+- 🌍 **中英双版** — 独立可复制，零翻译损耗
+- 🎬 **多镜头分镜** — 自动拆分场景，量化每个镜头的参数
+- ⚡ **平台通用** — 兼容 Veo3 / Sora / Runway / Kling / 可灵 / 即梦 / Pika / Luma / Hailuo
 
 ---
 
-## 鈿?涓€閿畨瑁?
-### 鏂瑰紡 1锛氳 OpenCode 甯綘瑁咃紙鎺ㄨ崘锛?
-鍦?OpenCode TUI 閲岀洿鎺ヨ锛?
-> Install CinePrompt skill by following https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/INSTALL.md
+## ⚡ 一键安装
 
-OpenCode 浼氳嚜鍔ㄦ媺鍙栧畨瑁呰鏄庡苟鎵ц銆?
-### 鏂瑰紡 2锛氫竴琛屽懡浠?
+### 方式 1：让 OpenCode 帮你装（推荐）
+
+在 OpenCode TUI 里直接说：
+
+> Install CinePrompt skill by following https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/INSTALL.md
+
+OpenCode 会自动拉取安装说明并执行。
+
+### 方式 2：一行命令
+
 ```bash
 # Mac / Linux
-curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh | bash
 
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 | iex
 ```
 
-### 鏂瑰紡 3锛氭墜鍔ㄥ畨瑁?
-```bash
-# 1. Skill 涓讳綋
-mkdir -p ~/.config/opencode/skills/cineprompt
-curl -o ~/.config/opencode/skills/cineprompt/SKILL.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/SKILL.md
+### 方式 3：手动安装
 
-# 2. /cine 鍛戒护
+```bash
+# 1. Skill 主体
+mkdir -p ~/.config/opencode/skills/cibeprompt
+curl -o ~/.config/opencode/skills/cibeprompt/SKILL.md \
+  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md
+
+# 2. /cine 命令
 mkdir -p ~/.config/opencode/commands
 curl -o ~/.config/opencode/commands/cine.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/commands/cine.md
+  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/commands/cine.md
 
-# 3. 閲嶅惎 OpenCode TUI
+# 3. 重启 OpenCode TUI
 ```
 
 ---
 
-## 馃殌 浣跨敤
+## 🚀 使用
 
 ```bash
-# 鏂瑰紡 A锛氬湪 OpenCode TUI 杈撳叆
-/cine 鍙ゅ煄鍗楅棬澶栵紝鍩庡涓?鍒?瀛楀啗鏃楅鎵紝鍗堝悗閫嗗厜锛岃溅杞壃灏?
-# 鏂瑰紡 B锛氱洿鎺ユ弿杩板満鏅紙鑷姩瑙﹀彂锛?甯垜鍋氫竴娈佃棰戯細鍙ゅ煄鍗楅棬澶栵紝鍗堝悗閫嗗厜锛岃溅杞壃灏橈紝椹箘澹版笎杩?```
+# 方式 A：在 OpenCode TUI 输入
+/cine 古城南门外，城墙上"刘"字军旗飘扬，午后逆光，车轮扬尘
 
-**杈撳嚭绀轰緥**锛?
-> 鎴戞槸AI瑙嗛鎻愮ず璇嶅姪鎵嬨€?>
-> 鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?> 馃搵 涓枃鎻愮ず璇嶏紙鐐瑰嚮鍙充笂瑙?馃搵 澶嶅埗锛?> 鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?>
-> 銆愰暅澶翠竴 00:00-00:03銆戣繙鏅缓绔嬶紝浣庤搴︿话鎷嶅彜鍩庡崡闂ㄢ€︹€?>
-> 鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?> 馃搵 English Prompt (Click 馃搵 to copy)
-> 鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹佲攣鈹?>
-> [Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at ancient city south gate鈥︹€?
+# 方式 B：直接描述场景（自动触发）
+帮我做一段视频：古城南门外，午后逆光，车轮扬尘，马蹄声渐近
+```
+
+**输出示例**：
+
+> 我是AI视频提示词助手。
+>
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> 📋 中文提示词（点击右上角 📋 复制）
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+>
+> 【镜头一 00:00-00:03】远景建立，低角度仰拍古城南门……
+>
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+> 📋 English Prompt (Click 📋 to copy)
+> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+>
+> [Shot 1 00:00-00:03] Establishing wide shot, low angle looking up at ancient city south gate……
+
 ---
 
-## 馃帴 妗堜緥鐢诲粖
+## 🎥 案例画廊
 
-鏌ョ湅瀹屾暣鐨勬渚嬮泦鍚堬細[`data/examples.json`](data/examples.json)
+查看完整的案例集合：[`data/examples.json`](data/examples.json)
 
-鎻愪氦浣犵殑妗堜緥锛氱紪杈?`data/examples.json`锛屾彁浜?PR 鍗冲彲銆?
+提交你的案例：编辑 `data/examples.json`，提交 PR 即可。
+
 ---
 
-## 馃 宸ヤ綔鍘熺悊
+## 🧠 工作原理
 
-| 鐢ㄦ埛璇?| 鎴戠悊瑙ｄ负 | 鎴戣緭鍑?|
+| 用户说 | 我理解为 | 我输出 |
 |--------|---------|--------|
-| "cinematic" | 璐ㄦ劅銆佹繁搴︺€佸彊浜?| 35mm 鑳剁墖銆佹祬鏅繁銆佹殩鑹茶皟 |
-| "dynamic" | 閫熷害銆佹祦鍔ㄣ€佸啿鍑?| 璐村湴椋炶銆佹墜鎸佸懠鍚搞€佹€ラ€熸í鎽?|
-| "highlight subject" | 鐒︾偣銆佸眰娆°€佸紩瀵?| 鎺ㄨ繎鐗瑰啓銆佽櫄鍖栬儗鏅€佽疆寤撳厜 |
-| "storytelling" | 鍙樺寲銆佸姬绾裤€佹儏缁?| 澶氶暅澶村垎闀溿€佸弽鎵撻暅澶淬€佺劍鐐硅浆绉?|
+| "cinematic" | 质感、深度、叙事 | 35mm 胶片、浅景深、暖色调 |
+| "dynamic" | 速度、流动、冲击 | 贴地飞行、手持呼吸、急速横摇 |
+| "highlight subject" | 焦点、层次、引导 | 推近特写、虚化背景、轮廓光 |
+| "storytelling" | 变化、弧线、情绪 | 多镜头分镜、反打镜头、焦点转移 |
 
-璇︾粏瑙勮寖瑙?[`SKILL.md`](SKILL.md)銆?
----
-
-## 馃搧 浠撳簱缁撴瀯
-
-```
-cineprompt-skill/
-鈹溾攢鈹€ index.html              # 椤圭洰灞曠ず椤碉紙GitHub Pages锛?鈹溾攢鈹€ data/
-鈹?  鈹斺攢鈹€ examples.json       # 妗堜緥鏁版嵁锛堝姩鎬佸姞杞斤級
-鈹溾攢鈹€ skills/
-鈹?  鈹斺攢鈹€ cineprompt/
-鈹?      鈹斺攢鈹€ SKILL.md        # Skill 涓讳綋锛堣 OpenCode 鍔犺浇锛?鈹溾攢鈹€ commands/
-鈹?  鈹斺攢鈹€ cine.md             # /cine 鍛戒护瀹氫箟
-鈹溾攢鈹€ install.sh              # Mac/Linux 涓€閿畨瑁?鈹溾攢鈹€ install.ps1             # Windows 涓€閿畨瑁?鈹溾攢鈹€ INSTALL.md              # 缁?OpenCode 鐪嬬殑瀹夎璇存槑
-鈹溾攢鈹€ README.md               # 浣犳鍦ㄧ湅鐨?鈹溾攢鈹€ SKILL.md                # Skill 瀹屾暣瑙勮寖
-鈹溾攢鈹€ LICENSE                 # MIT
-鈹斺攢鈹€ DEPLOY.md               # GitHub Pages 閮ㄧ讲鎸囧崡
-```
+详细规范见 [`SKILL.md`](SKILL.md)。
 
 ---
 
-## 馃洜锔?骞冲彴鍏煎鎬?
-| 骞冲彴 | 鐘舵€?| 澶囨敞 |
+## 📁 仓库结构
+
+```
+cibeprompt/
+├── index.html              # 项目展示页（GitHub Pages）
+├── data/
+│   └── examples.json       # 案例数据（动态加载）
+├── skills/
+│   └── cibeprompt/
+│       └── SKILL.md        # Skill 主体（被 OpenCode 加载）
+├── commands/
+│   └── cine.md             # /cine 命令定义
+├── install.sh              # Mac/Linux 一键安装
+├── install.ps1             # Windows 一键安装
+├── INSTALL.md              # 给 OpenCode 看的安装说明
+├── README.md               # 你正在看的
+├── SKILL.md                # Skill 完整规范
+├── LICENSE                 # MIT
+└── DEPLOY.md               # GitHub Pages 部署指南
+```
+
+---
+
+## 🛠️ 平台兼容性
+
+| 平台 | 状态 | 备注 |
 |------|------|------|
-| [OpenCode](https://opencode.ai) | 鉁?| 鍘熺敓 /cine 鍛戒护 |
-| [Claude Code](https://claude.com/claude-code) | 鉁?| 澶嶅埗 SKILL.md 鍒?`~/.claude/skills/cineprompt/` |
-| [Codex CLI](https://openai.com/index/openai-codex-cli) | 鉁?| 澶嶅埗鍒?`~/.codex/skills/cineprompt/` |
-| Cursor | 鈿狅笍 | 鏀瑰啓涓?`.cursorrules` 鏍煎紡 |
-| Windsurf | 鈿狅笍 | 鏀瑰啓涓?`.windsurfrules` 鏍煎紡 |
+| [OpenCode](https://opencode.ai) | ✅ | 原生 /cine 命令 |
+| [Claude Code](https://claude.com/claude-code) | ✅ | 复制 SKILL.md 到 `~/.claude/skills/cibeprompt/` |
+| [Codex CLI](https://openai.com/index/openai-codex-cli) | ✅ | 复制到 `~/.codex/skills/cibeprompt/` |
+| Cursor | ⚠️ | 改写为 `.cursorrules` 格式 |
+| Windsurf | ⚠️ | 改写为 `.windsurfrules` 格式 |
 
 ---
 
-## 馃 璐＄尞
+## 🤝 贡献
 
-娆㈣繋鎻愪氦锛?- 鏂扮殑鎻愮ず璇嶆渚嬶紙PR 鍒?`data/examples.json`锛?- 鏂扮殑椋庢牸閿氱偣
-- 澶氳瑷€缈昏瘧
-- Bug 鎶ュ憡
+欢迎提交：
+
+- 新的提示词案例（PR 到 `data/examples.json`）
+- 新的风格锚点
+- 多语言翻译
+- Bug 报告
 
 ---
 
-## 馃摐 璁稿彲璇?
-MIT 漏 2026 [huihuihui-wq](https://github.com/huihuihui-wq)
+## 📜 许可证
+
+MIT © 2026 [huihuihui-wq](https://github.com/huihuihui-wq)
 
 ---
 
 <div align="center">
 
-**[猸?Star](https://github.com/huihuihui-wq/cineprompt-skill)** 路 **[馃嵈 Fork](https://github.com/huihuihui-wq/cineprompt-skill/fork)** 路 **[馃摑 Issue](https://github.com/huihuihui-wq/cineprompt-skill/issues)**
+**[⭐ Star](https://github.com/huihuihui-wq/cibeprompt)** · **[🍴 Fork](https://github.com/huihuihui-wq/cibeprompt/fork)** · **[📝 Issue](https://github.com/huihuihui-wq/cibeprompt/issues)**
 
 </div>

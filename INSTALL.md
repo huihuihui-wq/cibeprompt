@@ -7,8 +7,8 @@
 
 CinePrompt consists of **two files** that need to be placed in the user's config directory:
 
-1. **Skill definition** 鈫?`~/.config/opencode/skills/cineprompt/SKILL.md`
-2. **Slash command** 鈫?`~/.config/opencode/commands/cine.md`
+1. **Skill definition** → `~/.config/opencode/skills/cibeprompt/SKILL.md`
+2. **Slash command** → `~/.config/opencode/commands/cine.md`
 
 On Windows, replace `~/.config/opencode/` with `%USERPROFILE%\.config\opencode\` (i.e. `C:\Users\<username>\.config\opencode\`).
 
@@ -17,7 +17,6 @@ On Windows, replace `~/.config/opencode/` with `%USERPROFILE%\.config\opencode\`
 ### Step 1: Detect the platform
 
 ```bash
-# Detect OS
 case "$(uname -s 2>/dev/null || echo Windows)" in
   Linux|Darwin) OS=unix ;;
   *)            OS=windows ;;
@@ -29,14 +28,14 @@ echo "Detected OS: $OS"
 
 **Unix (Mac/Linux):**
 ```bash
-mkdir -p ~/.config/opencode/skills/cineprompt
+mkdir -p ~/.config/opencode/skills/cibeprompt
 mkdir -p ~/.config/opencode/commands
 ```
 
 **Windows (PowerShell):**
 ```powershell
 $base = Join-Path $env:USERPROFILE '.config\opencode'
-New-Item -ItemType Directory -Path (Join-Path $base 'skills\cineprompt') -Force | Out-Null
+New-Item -ItemType Directory -Path (Join-Path $base 'skills\cibeprompt') -Force | Out-Null
 New-Item -ItemType Directory -Path (Join-Path $base 'commands') -Force | Out-Null
 ```
 
@@ -44,37 +43,33 @@ New-Item -ItemType Directory -Path (Join-Path $base 'commands') -Force | Out-Nul
 
 **Unix:**
 ```bash
-# Skill body
-curl -fsSL -o ~/.config/opencode/skills/cineprompt/SKILL.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/skills/cineprompt/SKILL.md
+curl -fsSL -o ~/.config/opencode/skills/cibeprompt/SKILL.md \
+  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md
 
-# /cine command
 curl -fsSL -o ~/.config/opencode/commands/cine.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/commands/cine.md
+  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/commands/cine.md
 ```
 
 **Windows (PowerShell):**
 ```powershell
 $base = Join-Path $env:USERPROFILE '.config\opencode'
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/skills/cineprompt/SKILL.md' `
-  -OutFile (Join-Path $base 'skills\cineprompt\SKILL.md') -UseBasicParsing
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cineprompt-skill/main/commands/cine.md' `
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md' `
+  -OutFile (Join-Path $base 'skills\cibeprompt\SKILL.md') -UseBasicParsing
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/commands/cine.md' `
   -OutFile (Join-Path $base 'commands\cine.md') -UseBasicParsing
 ```
 
 ### Step 4: Verify
 
 ```bash
-# Unix
-test -f ~/.config/opencode/skills/cineprompt/SKILL.md && echo "鉁?SKILL.md installed"
-test -f ~/.config/opencode/commands/cine.md && echo "鉁?cine.md installed"
+test -f ~/.config/opencode/skills/cibeprompt/SKILL.md && echo "SKILL.md installed"
+test -f ~/.config/opencode/commands/cine.md && echo "cine.md installed"
 ```
 
 ```powershell
-# Windows
 $base = Join-Path $env:USERPROFILE '.config\opencode'
-if (Test-Path (Join-Path $base 'skills\cineprompt\SKILL.md')) { Write-Host "鉁?SKILL.md installed" -ForegroundColor Green }
-if (Test-Path (Join-Path $base 'commands\cine.md')) { Write-Host "鉁?cine.md installed" -ForegroundColor Green }
+if (Test-Path (Join-Path $base 'skills\cibeprompt\SKILL.md')) { Write-Host "SKILL.md installed" -ForegroundColor Green }
+if (Test-Path (Join-Path $base 'commands\cine.md')) { Write-Host "cine.md installed" -ForegroundColor Green }
 ```
 
 ### Step 5: Restart OpenCode
@@ -86,7 +81,7 @@ Tell the user to restart their OpenCode TUI session. The `/cine` command will be
 After install, ask the user to run:
 
 ```
-/cine 涓€涓偛浼ょ殑濂充汉闈犲湪绐楄竟
+/cine 一个悲伤的女人靠在窗边
 ```
 
 Expected output should contain both Chinese and English prompts in the format defined in SKILL.md.
@@ -95,14 +90,14 @@ Expected output should contain both Chinese and English prompts in the format de
 
 **Unix:**
 ```bash
-rm -rf ~/.config/opencode/skills/cineprompt
+rm -rf ~/.config/opencode/skills/cibeprompt
 rm -f ~/.config/opencode/commands/cine.md
 ```
 
 **Windows (PowerShell):**
 ```powershell
 $base = Join-Path $env:USERPROFILE '.config\opencode'
-Remove-Item -Recurse -Force (Join-Path $base 'skills\cineprompt')
+Remove-Item -Recurse -Force (Join-Path $base 'skills\cibeprompt')
 Remove-Item -Force (Join-Path $base 'commands\cine.md')
 ```
 
@@ -114,10 +109,10 @@ To update to the latest version, re-run Step 3 with `--force` (curl) or overwrit
 
 If the user can't run shell commands, instruct them to:
 
-1. Download the two files from this repository's `skills/cineprompt/` and `commands/` folders
+1. Download the two files from this repository's `skills/cibeprompt/` and `commands/` folders
 2. Place them at the paths mentioned above
 3. Restart OpenCode
 
 ---
 
-**Repository**: https://github.com/huihuihui-wq/cineprompt-skill
+**Repository**: https://github.com/huihuihui-wq/cibeprompt
