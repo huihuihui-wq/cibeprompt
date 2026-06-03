@@ -7,8 +7,8 @@
 
 CinePrompt consists of **two files** that need to be placed in the user's config directory:
 
-1. **Skill definition** �?`~/.config/opencode/skills/cineprompt/SKILL.md`
-2. **Slash command** �?`~/.config/opencode/commands/cine.md`
+1. **Skill definition** 鈫?`~/.config/opencode/skills/cineprompt/SKILL.md`
+2. **Slash command** 鈫?`~/.config/opencode/commands/cine.md`
 
 On Windows, replace `~/.config/opencode/` with `%USERPROFILE%\.config\opencode\` (i.e. `C:\Users\<username>\.config\opencode\`).
 
@@ -66,15 +66,15 @@ Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cinepromp
 
 ```bash
 # Unix
-test -f ~/.config/opencode/skills/cineprompt/SKILL.md && echo "�?SKILL.md installed"
-test -f ~/.config/opencode/commands/cine.md && echo "�?cine.md installed"
+test -f ~/.config/opencode/skills/cineprompt/SKILL.md && echo "鉁?SKILL.md installed"
+test -f ~/.config/opencode/commands/cine.md && echo "鉁?cine.md installed"
 ```
 
 ```powershell
 # Windows
 $base = Join-Path $env:USERPROFILE '.config\opencode'
-if (Test-Path (Join-Path $base 'skills\cineprompt\SKILL.md')) { Write-Host "�?SKILL.md installed" -ForegroundColor Green }
-if (Test-Path (Join-Path $base 'commands\cine.md')) { Write-Host "�?cine.md installed" -ForegroundColor Green }
+if (Test-Path (Join-Path $base 'skills\cineprompt\SKILL.md')) { Write-Host "鉁?SKILL.md installed" -ForegroundColor Green }
+if (Test-Path (Join-Path $base 'commands\cine.md')) { Write-Host "鉁?cine.md installed" -ForegroundColor Green }
 ```
 
 ### Step 5: Restart OpenCode
@@ -86,7 +86,7 @@ Tell the user to restart their OpenCode TUI session. The `/cine` command will be
 After install, ask the user to run:
 
 ```
-/cine 一个悲伤的女人靠在窗边
+/cine 涓€涓偛浼ょ殑濂充汉闈犲湪绐楄竟
 ```
 
 Expected output should contain both Chinese and English prompts in the format defined in SKILL.md.
