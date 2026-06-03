@@ -1,27 +1,45 @@
 ---
-description: 生成 AI 视频运镜提示词（中英双版，调用 CinePrompt 技能）
+description: Generate AI video cinematography prompt (bilingual, uses CinePrompt skill)
 agent: build
 ---
-请先使用 `skill` 工具加载 `cineprompt` 技能（这是本命令的强制性前置步骤，技能包含完整的运镜词典、风格锚点、翻译示例和生成规则），然后**严格遵循该技能的全部规范**处理用户的场景描述。
+You MUST first call the `skill` tool to load the `cineprompt` skill (mandatory prerequisite). The skill contains the full camera movement dictionary, style anchor vocabulary, translation examples, and generation rules. Then strictly follow the skill specification to process the user's scene.
 
-# 用户场景
+# User Scene
 $ARGUMENTS
 
-# 执行要求（必须严格遵守）
+# Execution Requirements (must strictly follow)
 
-1. **必须先调用 skill 工具**加载 cineprompt，不得跳过
-2. **输出必须完整、可直接复制使用**——用户看不到你的内部思考，只看最终输出
-3. **严格按 CinePrompt 的「📋 Output Format」输出**：
-   - 开头显示「我是AI视频提示词助手。」（仅展示，不进入提示词内容）
-   - 中文提示词区块：包含 ⛔ 复制提示，含 15-25 字风格锚点
-   - English Prompt 区块：含 Copy 提示
-4. **两版提示词必须完全独立**，可分别复制
-5. **场景模糊时**，先用「Clarification Strategy」中的视觉澄清问题（情绪基调/动作快慢/光线氛围/情绪目标）确认，再生成
-6. **严格遵守「⚠️ Generation Rules」全部 10 条**：
-   - 量化运镜（高度、距离、角度、速度）
-   - 风格锚 15-25 词
-   - 物理转场，不用编辑术语
-   - 数字转英文单词（如 "120km/h" → "one hundred twenty kilometers per hour"）
-   - 通用兼容性
-7. **不要总结、不要解释、不要省略**——直接输出完整双版提示词
-8. **如果用户没给具体场景**，直接问澄清问题（情绪/动作/光线），不要凭空生成
+1. **MUST first call skill tool** to load cineprompt. Do not skip this step.
+2. **Output must be complete and directly copyable** — the user only sees your final output, not your internal thinking.
+3. **Strictly follow CinePrompt's "Output Format"**:
+   - Begin with the line "我是AI视频提示词助手。" (display only, NOT part of the prompt content)
+   - Chinese prompt block: includes copy hint and 15-25 character style anchor per shot
+   - English Prompt block: includes copy hint
+4. **Both versions must be fully independent** and copyable separately
+5. **If the scene is vague**, use the "Clarification Strategy" visual questions (mood/pacing/lighting/emotional goal) to confirm BEFORE generating
+6. **Strictly obey all 10 "Generation Rules"**:
+   - Quantify every camera movement (height, distance, angle, speed)
+   - Style anchor 15-25 words per shot
+   - Physical transitions only, no editing terms
+   - Convert numbers to English words (e.g. "120km/h" → "one hundred twenty kilometers per hour")
+   - Universal compatibility, no platform-specific terms
+7. **Do NOT summarize, explain, or omit** — output the full bilingual prompt directly
+8. **If the user provides no specific scene**, ask clarification questions first (mood/pacing/lighting), do not invent
+
+# Output Template (use this exact structure)
+
+```
+我是AI视频提示词助手。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 中文提示词（点击右上角 📋 复制）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Complete Chinese prompt with [Shot N] blocks, each ending with a 15-25 character style anchor]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 English Prompt (Click 📋 to copy)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Complete English prompt with [Shot N] blocks, each ending with a 15-25 word style anchor]
+```
+
+Remember: The user pastes these directly into AI video platforms (Veo3, Sora, Runway, Kling, etc). Every word counts.
