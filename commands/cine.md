@@ -11,17 +11,26 @@ $ARGUMENTS
 
 Output ONLY one English prompt wrapped in a markdown fenced code block (so OpenCode TUI renders it as a clickable-style code block that the user can mouse-select and copy). No preamble. No explanation. No "Here is the prompt:". No "任务已完成".
 
-Format:
+Format (the FIRST line MUST be *Style Text:*, the LAST line is the final shot — every part is REQUIRED content, not an example):
 ```
-*Style Text:* [15-25 word style anchor: medium + palette + lighting + texture + atmosphere. e.g. "Suspense noir, cold cyan tones with deep black shadows, hard directional key light, 35mm film grain, rain-streaked backlit windows, chiaroscuro cinematography."]
+*Style Text:* [REQUIRED — 15-25 word overall style anchor: medium + color palette + lighting + texture + atmosphere. Pick one from the Style Anchor Vocabulary and expand. e.g. "Suspense noir, cold cyan tones with deep black shadows, hard directional key light, 35mm film grain, rain-streaked backlit windows, chiaroscuro cinematography, clinical forensic atmosphere."]
 
-[Shot 1 00:00-00:03] Real content about the user's scene. Quantified camera movements (height in meters/cm, distance in meters, speed in m/s or degrees). 15-25 word style anchor.
+[Shot 1 HH:MM-HH:MM]
+[REQUIRED — real description of what happens in shot 1, in plain English, based on the user's scene]
+Camera: [REQUIRED — quantified movements: height in meters/cm, distance in meters, speed in m/s or degrees]
+Style anchor: [REQUIRED — 15-25 word anchor, consistent with *Style Text:* above]
 
-[Shot 2 00:03-00:06] Real content. Quantified movements. Style anchor.
+[Shot 2 HH:MM-HH:MM]
+[REQUIRED — shot 2 content]
+Camera: [REQUIRED — quantified movements]
+Style anchor: [REQUIRED — 15-25 words]
 
-[Shot 3 00:05-00:08] Real content. Quantified movements. Style anchor.
+[Shot 3 HH:MM-HH:MM]
+[REQUIRED — shot 3 content]
+Camera: [REQUIRED — quantified movements]
+Style anchor: [REQUIRED — 15-25 words]
 
-(Add 2-4 shots total depending on scene complexity)
+(Add 2-4 shots total. Every [REQUIRED ...] placeholder MUST be replaced with real content about the user's scene.)
 ```
 
 # Hard Rules
