@@ -13,6 +13,8 @@ Output ONLY one English prompt wrapped in a markdown fenced code block (so OpenC
 
 Format:
 ```
+*Style Text:* [15-25 word style anchor: medium + palette + lighting + texture + atmosphere. e.g. "Suspense noir, cold cyan tones with deep black shadows, hard directional key light, 35mm film grain, rain-streaked backlit windows, chiaroscuro cinematography."]
+
 [Shot 1 00:00-00:03] Real content about the user's scene. Quantified camera movements (height in meters/cm, distance in meters, speed in m/s or degrees). 15-25 word style anchor.
 
 [Shot 2 00:03-00:06] Real content. Quantified movements. Style anchor.
