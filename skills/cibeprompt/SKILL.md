@@ -93,6 +93,11 @@ When vague, ask visual questions:
 | **Documentary** | 自然光，手持晃动，真实感，抓拍，无修饰 | Natural light, handheld shake, realism, candid, unpolished |
 | **Commercial** | 4K超清，高饱和度，产品特写，明亮通透，精致 | 4K ultra-clear, high saturation, product close-up, bright, refined |
 
+### 🔇 通用约束（适用于所有风格）
+
+- **无 BGM** / **无背景乐** / **No BGM** / **No background music** —— 画面提示词不包含任何配乐/音乐描述
+- **无字幕** / **无英文中文字幕** / **No subtitles** / **No English or Chinese subtitles** —— 画面提示词不包含任何字幕、文本、标题、歌词或文字叠加描述
+
 ---
 
 ## ⚠️ Generation Rules
