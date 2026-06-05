@@ -703,159 +703,77 @@ Style anchor: Suspense — cold tones, hard light, deep shadows, local lighting,
 <!-- INSTALL -->
 <section id="install" class="py-24">
   <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <p class="text-cinema-gold text-sm font-mono uppercase tracking-widest mb-3">/ 05 · Installation</p>
-      <h2 class="font-display text-4xl sm:text-5xl font-bold mb-4">3 steps to install</h2>
-      <p class="text-cinema-muted">No Node.js. No Python. No build tools.</p>
-    </div>
-
-    <div class="space-y-6">
-      <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cinema-gold text-cinema-bg font-bold flex items-center justify-center">1</div>
-          <div class="flex-1">
-            <h3 class="font-display text-xl font-semibold mb-2">Install OpenCode</h3>
-            <p class="text-sm text-cinema-muted mb-3">If you don't have it, visit <a href="https://opencode.ai" class="text-cinema-gold hover:underline">opencode.ai</a>.</p>
-            <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code class="text-xs font-mono text-cinema-muted"># Mac/Linux
-curl -fsSL https://opencode.ai/install | bash
-
-# Windows (PowerShell)
-irm https://opencode.ai/install | iex</code></pre>
-          </div>
-        </div>
-      </div>
-
-      <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cinema-gold text-cinema-bg font-bold flex items-center justify-center">2</div>
-          <div class="flex-1">
-            <h3 class="font-display text-xl font-semibold mb-2">Tell OpenCode one sentence</h3>
-            <p class="text-sm text-cinema-muted mb-3">In OpenCode TUI, send:</p>
-            <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code class="text-sm font-mono text-cinema-gold">Install CinePrompt skill by following
-https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/INSTALL.md</code></pre>
-            <p class="text-xs text-cinema-muted/60 mt-2">OpenCode auto-fetches the install guide and executes it.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cinema-gold text-cinema-bg font-bold flex items-center justify-center">3</div>
-          <div class="flex-1">
-            <h3 class="font-display text-xl font-semibold mb-2">Or run the one-liner</h3>
-            <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code class="text-xs font-mono text-cinema-muted"># Mac/Linux
-curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh | bash
-
-# Windows (PowerShell)
-irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 | iex</code></pre>
-            <p class="text-xs text-cinema-muted/60 mt-2">Restart OpenCode TUI and use <code class="text-cinema-gold">/cine</code>.</p>
-        </div>
-        <p class="text-xs text-cinema-muted/60 mt-2">Restart OpenCode TUI and use <code class="text-cinema-gold">/cine</code>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OTHER AI TOOLS -->
-<section class="py-20 bg-cinema-elev/20 border-y border-cinema-border">
-  <div class="max-w-5xl mx-auto px-6">
     <div class="text-center mb-12">
-      <p class="text-cinema-gold text-sm font-mono uppercase tracking-widest mb-3">/ 06 · Other AI Tools</p>
-      <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">Works with Claude Code, Cursor, and more</h2>
-      <p class="text-cinema-muted">CinePrompt is a portable skill — install it into any compatible AI coding tool.</p>
+      <p class="text-cinema-gold text-sm font-mono uppercase tracking-widest mb-3">/ 05 · Installation</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold mb-4">One command, two clicks</h2>
+      <p class="text-cinema-muted">Auto-detects your AI tool. Installs in 5 seconds.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <!-- Claude Code -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+      <!-- OpenCode -->
       <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm">C</div>
-          <h3 class="font-display text-lg font-semibold">Claude Code</h3>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold">O</div>
+          <h3 class="font-display text-lg font-semibold">OpenCode</h3>
           <span class="text-xs font-mono text-cinema-gold px-2 py-0.5 border border-cinema-gold/30 rounded ml-auto">recommended</span>
         </div>
-        <p class="text-sm text-cinema-muted mb-3">One-liner install into <code class="text-cinema-gold">~/.claude/skills/cibeprompt/</code>:</p>
         <div class="code-block relative">
-          <button class="copy-btn-prominent" data-copy="claude-code-install">
+          <button class="copy-btn-prominent" data-copy="install-opencode">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
             <span class="copy-label">Copy</span>
           </button>
-          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="claude-code-install" class="text-xs font-mono text-cinema-muted"># Mac/Linux
-mkdir -p ~/.claude/skills/cibeprompt && \
-curl -fsSL -o ~/.claude/skills/cibeprompt/SKILL.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md
-
-# Windows (PowerShell)
-$base = Join-Path $env:USERPROFILE '.claude\skills\cibeprompt'
-New-Item -ItemType Directory -Path $base -Force | Out-Null
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md' `
-  -OutFile (Join-Path $base 'SKILL.md') -UseBasicParsing</code></pre>
+          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="install-opencode" class="text-xs font-mono text-cinema-muted">curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh | bash</code></pre>
         </div>
-        <p class="text-xs text-cinema-muted/60 mt-2">Then in Claude Code, the skill auto-loads when the prompt matches.</p>
+        <p class="text-xs text-cinema-muted/60 mt-3">Installs to <code class="text-cinema-gold">~/.config/opencode/</code>. Restart TUI, then <code class="text-cinema-gold">/cine</code>.</p>
       </div>
 
-      <!-- Cursor -->
+      <!-- Claude Code -->
       <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm">C</div>
-          <h3 class="font-display text-lg font-semibold">Cursor</h3>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-white font-bold">C</div>
+          <h3 class="font-display text-lg font-semibold">Claude Code</h3>
         </div>
-        <p class="text-sm text-cinema-muted mb-3">Download the SKILL.md body as your <code class="text-cinema-gold">.cursorrules</code> file:</p>
         <div class="code-block relative">
-          <button class="copy-btn-prominent" data-copy="cursor-install">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          <button class="copy-btn-prominent" data-copy="install-claude">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
             <span class="copy-label">Copy</span>
           </button>
-          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="cursor-install" class="text-xs font-mono text-cinema-muted">curl -fsSL -o .cursorrules \
-  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/SKILL.md
-
-# Then restart Cursor to load the rules</code></pre>
+          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="install-claude" class="text-xs font-mono text-cinema-muted">curl -fsSL https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.sh | bash</code></pre>
         </div>
-      </div>
-
-      <!-- Windsurf -->
-      <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-500 flex items-center justify-center text-white font-bold text-sm">W</div>
-          <h3 class="font-display text-lg font-semibold">Windsurf</h3>
-        </div>
-        <p class="text-sm text-cinema-muted mb-3">Add CinePrompt rules to <code class="text-cinema-gold">.windsurfrules</code>:</p>
-        <div class="code-block relative">
-          <button class="copy-btn-prominent" data-copy="windsurf-install">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 002-2h2a2 2 0 012 2"/></svg>
-            <span class="copy-label">Copy</span>
-          </button>
-          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="windsurf-install" class="text-xs font-mono text-cinema-muted">curl -fsSL -o .windsurfrules \
-  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/SKILL.md</code></pre>
-        </div>
-      </div>
-
-      <!-- Codex CLI -->
-      <div class="border border-cinema-border rounded-2xl p-6 bg-cinema-elev/30 card-hover">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-slate-500 to-slate-700 flex items-center justify-center text-white font-bold text-sm">X</div>
-          <h3 class="font-display text-lg font-semibold">Codex CLI</h3>
-        </div>
-        <p class="text-sm text-cinema-muted mb-3">Install into <code class="text-cinema-gold">~/.codex/skills/cibeprompt/</code>:</p>
-        <div class="code-block relative">
-          <button class="copy-btn-prominent" data-copy="codex-install">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 002-2h2a2 2 0 012 2"/></svg>
-            <span class="copy-label">Copy</span>
-          </button>
-          <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="codex-install" class="text-xs font-mono text-cinema-muted"># Mac/Linux
-mkdir -p ~/.codex/skills/cibeprompt && \
-curl -fsSL -o ~/.codex/skills/cibeprompt/SKILL.md \
-  https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/skills/cibeprompt/SKILL.md</code></pre>
-        </div>
+        <p class="text-xs text-cinema-muted/60 mt-3">Installs to <code class="text-cinema-gold">~/.claude/</code>. Restart TUI, then <code class="text-cinema-gold">/cine</code>.</p>
       </div>
     </div>
 
-    <p class="text-center text-xs text-cinema-muted/60 mt-8">
-      All tools use the same SKILL.md body. The skill auto-triggers when your prompt mentions cinematography, camera movement, or video generation.
-    </p>
+    <!-- Windows one-liner -->
+    <div class="border border-cinema-border rounded-2xl p-5 bg-cinema-elev/30 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <svg class="w-5 h-5 text-cinema-muted" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h8v8H3V3m10 0h8v8h-8V3m-10 10h8v8H3v-8m10 0h8v8h-8v-8Z"/></svg>
+        <span class="text-sm font-semibold">Windows (PowerShell)</span>
+      </div>
+      <div class="code-block relative">
+        <button class="copy-btn-prominent" data-copy="install-windows">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <span class="copy-label">Copy</span>
+        </button>
+        <pre class="bg-cinema-bg border border-cinema-border rounded-lg p-3 overflow-x-auto"><code id="install-windows" class="text-xs font-mono text-cinema-muted">irm https://raw.githubusercontent.com/huihuihui-wq/cibeprompt/main/install.ps1 | iex</code></pre>
+      </div>
+    </div>
+
+    <!-- Other tools compact -->
+    <details class="border border-cinema-border rounded-2xl bg-cinema-elev/30">
+      <summary class="px-5 py-4 cursor-pointer text-sm text-cinema-muted hover:text-cinema-gold transition flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        Other tools: Cursor / Windsurf / Codex
+      </summary>
+      <div class="px-5 pb-5 space-y-3 text-sm text-cinema-muted">
+        <p>The one-liner above auto-detects <code class="text-cinema-gold">~/.config/opencode</code>, <code class="text-cinema-gold">~/.claude</code>, or <code class="text-cinema-gold">~/.codex</code> and installs to the first one found.</p>
+        <p>For <strong>Cursor</strong> and <strong>Windsurf</strong>, after install copy the skill body into your project:</p>
+        <pre class="bg-cinema-bg border border-cinema-border rounded p-2 text-xs font-mono text-cinema-muted">cp ~/.config/opencode/skills/cibeprompt/SKILL.md ./.cursorrules   # Cursor
+cp ~/.config/opencode/skills/cibeprompt/SKILL.md ./.windsurfrules  # Windsurf</pre>
+      </div>
+    </details>
   </div>
 </section>
-
-<div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- CTA -->
 <section class="py-24">
