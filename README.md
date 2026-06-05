@@ -2,6 +2,14 @@
 
 **Every creative vision, precisely visualized.**
 
+<p align="center">
+  <a href="https://huihuihui-wq.github.io/cibeprompt/"><strong>🌐 View Live Demo & Documentation</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#-installation">⚡ Install</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/huihuihui-wq/cibeprompt/issues">💬 Issues</a>
+</p>
+
 Professional AI cinematography prompt engineer. Outputs a single English prompt with quantified camera movements and style anchors, ready to paste into Veo3 / Sora / Runway / Kling / Jimeng / Pika / Luma / Hailuo.
 
 [⚡ Install](#-installation) · [🎥 Examples](#-examples) · [📖 SKILL.md](SKILL.md) · [⭐ Star this](https://github.com/huihuihui-wq/cibeprompt)
